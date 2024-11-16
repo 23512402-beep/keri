@@ -1,0 +1,371 @@
+
+
+
+
+/* start the global style */
+
+:root{
+--main-color:#E65f78;
+--bg-main-light:#f8f9f1;
+
+}
+.main-color{
+    color: var(--main-color);
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.bg-main-light{
+    background-color: var(--bg-main-light);
+}
+.padding-section{
+    padding: 70px 0px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+span{
+    color: var(--main-color);
+}
+
+/* End the global style */
+
+
+/* start the navbar styles */
+
+.mynav{
+background-color: white;
+box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+font-weight: bold;
+}
+
+.mynav .nav-link.active{
+    color:var(--main-color) !important;
+    transition: 1s !important;
+}
+.mynav .nav-link:hover{
+    color: var(--main-color) !important;
+}
+
+/* End the navbar styles */
+
+
+/* start the header */
+header{
+  background-image:url(./assets/header-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.main-content{
+    position: relative;
+}
+
+
+
+.btn{
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.10);
+  color: white;
+  border-radius: 40px;
+ position: relative;
+ top: 50px;
+ border: none;
+ font-size: 2rem;
+ cursor: pointer;
+ z-index: 1000;
+ 
+}
+.btn:hover{
+background-image: linear-gradient(90deg,#08ff08,#50e3fc,#bc13fe,#03a9f4,#0ff0fc);
+
+background-size: 500%;
+z-index: 1;
+animation: blink 7s linear infinite;
+
+}
+ 
+@keyframes blink{
+from{
+background-position:0%
+}
+to{
+background-position: 500%;
+}
+
+
+
+}
+
+.btn::after{
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -10px;
+   right: -10px;
+    bottom: -10px;
+    background: inherit;
+    filter: blur(50px);
+    border-radius: 40px;
+  
+
+} 
+
+.settings{
+    position: fixed;
+    left: 0;
+    top: 20%;
+    cursor: pointer;
+    background-color: black;
+    padding: 8px;
+}
+
+.arrow{
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+.bounced{
+
+position: absolute;
+top: 140%;
+left: 50%;
+width: 40px;
+    height: 80px;
+    border: 2px solid #eee;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+.inner-boun{
+    width: 5px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+
+}
+
+
+
+     
+/* End the header */
+
+
+
+/* start the about*/
+.my-span{
+    color: var(--main-color);
+}
+.icons{
+    display: flex;
+  border: 2px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+ transition: 1s;
+cursor: pointer;
+}
+.icons:hover{
+    border: 2px solid var(--main-color);
+   color: var(--main-color);
+   
+}
+
+
+/* End the about */
+
+
+/* start the services */
+.inner{
+    border: 2px solid red;
+    padding: 20px;
+}
+.icons-services{
+    color: var(--main-color);
+}
+.content-services h3{
+  position: relative;
+}
+.content-services h3::after{
+    content: '';
+    padding-bottom: 2px;
+    position: absolute;
+    bottom: -20%;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 35px;
+    height: 2px;
+    background-color: red;
+   transition: 1s;
+}
+.row .inner:hover h3::after{
+  width: 70px;
+
+}
+ 
+/* End the services */
+
+
+
+/* Start the freelancer */
+.btn-free{
+padding: 10px 25px;
+border: none;
+outline: none;
+background-color: var(--main-color);
+border-radius: 10px;
+transition: 1s;
+}
+.btn-free:hover{
+    background-color: #fe13d3;
+}
+
+
+
+/* End the freelancer */
+
+
+/* start the client */
+.carousel-item img{
+width: 100px !important;
+height: 100px !important;
+border-radius: 50%;
+margin: auto !important;
+margin-bottom: 20px !important;
+
+}
+
+ .carousel-indicators   [data-bs-target="#carouselExampleCaptions"]{
+width: 10px;
+background-color: var(--main-color);
+ }
+
+ .carousel-indicators   [data-bs-target="#carouselExampleCaptions"].active{
+    width: 20px;
+    background-color: var(--main-color);
+ }
+
+
+
+/* End the client */
+
+/* start the protofolio */
+
+.nav .nav-item .nav-link{
+color: black;
+transition: unset;
+font-weight: bold;
+}
+.nav .nav-item .nav-link.active{
+background-color: var(--main-color);
+color: #fff;
+border-radius: 50px;
+}
+.picture{
+    position: relative;
+    overflow: hidden;
+}
+.picture img{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.layer-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* transform: translateY(100%); */
+    text-align: center;
+    /* padding: 70px; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.4s;
+    opacity: 0;
+}
+.picture:hover .layer-image{
+    /* transform: translateY(0%); */
+    opacity: 1;
+    cursor: pointer;
+}
+.picture:hover img{
+    transform: scale(1.5);
+    
+}
+
+
+
+
+
+
+/* End the protofolio */
+
+
+
+
+/* start the contact */
+
+.icon-contact{
+color: var(--main-color);
+}
+
+
+.btn-contact{
+background-color: var(--main-color);
+border: none;
+outline: none;
+padding: 16px 25px;
+border-radius: 20px;
+color: white;
+
+
+
+}
+
+/* End the contact */
+
+
+
+
+
+
+
